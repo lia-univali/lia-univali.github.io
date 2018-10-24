@@ -12,14 +12,27 @@ window.onscroll = () => {
         }else{
             nav.className = 'site-header-white sticky-top py-1 scroll-black shadow';
         }    
-    }else if(height>=720 && height<1080){
+    }else if(height>=720 && height<900){
         if(this.scrollY <= 435) {
             nav.className = 'site-header sticky-top py-1 shadow';
         }
         else if(this.scrollY>435 && this.scrollY<1110){
             nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
-        }else{
+        }else if(this.scrollY>1100 && this.scrollY<2515){
             nav.className = 'site-header-white sticky-top py-1 scroll-black shadow';
+        }else if(this.scrollY>2515 && this.scrollY<4000){
+            nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
+        }
+    }else if(height>=900 && height<1080){
+        if(this.scrollY <= 535) {
+            nav.className = 'site-header sticky-top py-1 shadow';
+        }
+        else if(this.scrollY>535 && this.scrollY<1340){
+            nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
+        }else if(this.scrollY>1340 && this.scrollY<2745){
+            nav.className = 'site-header-white sticky-top py-1 scroll-black shadow';
+        }else if(this.scrollY>2745 && this.scrollY<4000){
+            nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
         }
     }
   };

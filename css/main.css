@@ -178,7 +178,7 @@ nav.scroll-black {
 }
 
 .tamanho-2{
-  width: 11%;
+  width: 50px;
 }
 
 .tamanho-25{
@@ -216,4 +216,16 @@ nav.scroll-black {
 
 .background-black{
   background-color: #000000;
+}
+
+.padding-7-left{
+  padding-left: 7%;
+}
+
+.padding-7-right{
+  padding-right: 7%;
+}
+
+.icones{
+  font-size: 20px;
 }
