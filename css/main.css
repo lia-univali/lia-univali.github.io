@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .background {
   display: table;
   width: 100%;
@@ -14,11 +18,11 @@
 }
 
 ::-moz-selection { /* Code for Firefox */
-  background: Lavender;
+  background: rgb(206, 206, 255);
 }
 
 ::selection {
-  background: Lavender;
+  background: rgb(206, 206, 255);
 }
 
 .site-header {

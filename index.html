@@ -12,6 +12,8 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="plugins/jquery-drawsvg/src/jquery.drawsvg.js"></script>
 
 </head>
 
@@ -20,14 +22,12 @@
 
     <nav class="site-header sticky-top py-1 shadow rounded" id="navbar">
         <div class="container d-flex flex-column flex-md-row justify-content-between center">
-            <a class="py-2" href="#">
-                <img src="imgs/logo.png" width="100" height="30">
-            </a>
-            <a class="py-2 d-none d-md-inline-block" href="#projetos">Projetos</a>
-            <a class="py-2 d-none d-md-inline-block" href="#integrantes">Integrantes</a>
-            <a class="py-2 d-none d-md-inline-block" href="#quemsomos">O LIA</a>
-            <a class="py-2 d-none d-md-inline-block" href="#contato">Contato</a>
-            <a class="py-2 d-none d-md-inline-block" href="#contato">Artigos</a>
+            <a class="py-2" href="#"> <img src="imgs/logo.png" width="100" height="30"> </a>
+            <a class="py-2 d-none d-md-inline-block scroll" href="#projetos">Projetos</a>
+            <a class="py-2 d-none d-md-inline-block scroll" href="#integrantes">Integrantes</a>
+            <a class="py-2 d-none d-md-inline-block scroll" href="#quemsomos">O LIA</a>
+            <a class="py-2 d-none d-md-inline-block scroll" href="#contato">Contato</a>
+            <a class="py-2 d-none d-md-inline-block scroll" href="#contato">Artigos</a>
             <div class="">
                 <a class="py-2 d-none d-md-inline-block" href="https://www.univali.br" target="blank"><img src="imgs/univaliMini.png"
                         class="tamanho-2" alt="Univali Logo"></a>
@@ -56,7 +56,8 @@
                         Principais Projetos do Laboratório.
                     </span>
                     <div class="container projetos-margin margin-top-15">
-                        <img src="imgs/lia.png" class="rounded-circle tamanho-25" alt="logo">
+
+                        <img src="imgs/lia.png" class="rounded-circle tamanho-25" id="imagem" alt="logo">
                         <img src="imgs/lia.png" class="rounded-circle margin-left tamanho-25" alt="logo">
                         <img src="imgs/lia.png" class="rounded-circle margin-left tamanho-25" alt="logo">
                     </div>
@@ -142,18 +143,14 @@
                         <div class="col-lg-6 black margin-top text-right">
                             <h1 class="black">Laboratório de inteligência Aplicada.</h1>
                         </div>
-                        <div class="col-lg-6 black2 margin-top text-left"><span>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                                Proin gravida neque odio, in tincidunt dolor congue in. Vestibulum ante ipsum primis in
-                                faucibus orci
-                                uctus et ultrices posuere cubilia Curae; Mauris scelerisque arcu nec venenatis
-                                vestibulum. <br>
-                                <br>
-
-                                Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus
-                                mattis. In fringilla purus
-                                mauris, a pretium turpis semper vel. Quisque porta mauris eu urna ultricies, vel semper
-                                vulputate. Sed imperdiet iaculis ligula et tincidunt. Etiam egestas metus eget est.
+                        <div class="col-lg-6 black2 margin-top text-left"><span>Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Proin gravida neque odio, in tincidunt dolor congue in. Vestibulum ante ipsum 
+                            primis in faucibus orci uctus et ultrices posuere cubilia Curae; Mauris scelerisque arcu nec 
+                            venenatis vestibulum.
+                            <br><br>
+                            Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus mattis. 
+                            In fringilla purus mauris, a pretium turpis semper vel. Quisque porta mauris eu urna ultricies, 
+                            vel semper vulputate. Sed imperdiet iaculis ligula et tincidunt. Etiam egestas metus eget est.
                             </span>
                         </div>
                     </div>
@@ -193,8 +190,8 @@
                         <!-- Content -->
                         <h6 class="text-uppercase font-weight-bold">Laboratório de Inteligência Aplicada</h6>
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus
-                            mattis. In fringilla purus.
+                        <p>Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus mattis. 
+                            In fringilla purus.
                         </p>
 
                     </div>
@@ -253,17 +250,17 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-        </script>
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
 
+
+
+
+    <script type="text/javascript" src="plugins/particles-js/particles.js"></script>
+    <script type="text/javascript" src="plugins/particles-js/app.js"></script>
 
 
 </body>

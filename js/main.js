@@ -1,3 +1,4 @@
+
 window.onscroll = () => {
     var width = screen.width;
     var height = screen.height;
@@ -37,4 +38,6 @@ window.onscroll = () => {
     }
   };
 
-    
+  var mySVG = $('#svg_logo').drawsvg();
+  mySVG.drawsvg('animate');
+ 
