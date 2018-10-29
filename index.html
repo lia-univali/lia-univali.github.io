@@ -12,9 +12,8 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-    <script src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="plugins/jquery-drawsvg/src/jquery.drawsvg.js"></script>
-
+    <script src="js/jquery@1.11.3,jquery.easing@1.3(jquery.easing.1.3.min.js)"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body class="background">
@@ -40,7 +39,29 @@
     <div class="home blocoInicial">
         <div class="home-content ">
             <div class="container">
-                <h1 class="home-lia">LIA - LABORATÓRIO DE INTELIGENCIA APLICADA</h1>
+                <div class="svg-lia">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="350" height="350">
+                        <defs>
+                            <path d="M247.37 343.68L136.84 343.68L136.84 159.47" id="f4ajy61mAJ"></path>
+                            <path d="M285.26 343.68L285.26 159.47" id="gOeL9VyIK"></path>
+                            <path d="M507.37 343.68L433.68 159.47L364.21 343.68" id="aGH7epr8o"></path>
+                            <path d="M396.84 254.21L471.58 254.21" id="b13rmaw2Yl"></path>
+                        </defs>
+                        <g>
+                            <use xlink:href="#f4ajy61mAJ" opacity="1" fill-opacity="0" stroke="white" stroke-width="5"
+                                stroke-opacity="1"></use>
+                            <use xlink:href="#gOeL9VyIK" opacity="1" fill-opacity="0" stroke="white" stroke-width="5"
+                                stroke-opacity="1"></use>
+                            <use xlink:href="#aGH7epr8o" opacity="1" fill-opacity="0" stroke="white" stroke-width="5"
+                                stroke-opacity="1"></use>
+                            <use xlink:href="#b13rmaw2Yl" opacity="1" fill-opacity="0" stroke="white" stroke-width="5"
+                                stroke-opacity="1"></use>
+                        </g>
+                    </svg>
+                </div>
+                <h1 class="home-lia">LABORATÓRIO DE INTELIGENCIA APLICADA</h1>
+
             </div>
         </div>
     </div>
@@ -143,14 +164,19 @@
                         <div class="col-lg-6 black margin-top text-right">
                             <h1 class="black">Laboratório de inteligência Aplicada.</h1>
                         </div>
-                        <div class="col-lg-6 black2 margin-top text-left"><span>Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Proin gravida neque odio, in tincidunt dolor congue in. Vestibulum ante ipsum 
-                            primis in faucibus orci uctus et ultrices posuere cubilia Curae; Mauris scelerisque arcu nec 
-                            venenatis vestibulum.
-                            <br><br>
-                            Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus mattis. 
-                            In fringilla purus mauris, a pretium turpis semper vel. Quisque porta mauris eu urna ultricies, 
-                            vel semper vulputate. Sed imperdiet iaculis ligula et tincidunt. Etiam egestas metus eget est.
+                        <div class="col-lg-6 black2 margin-top text-left"><span>Se hoje é o dia das crianças... Ontem
+                                eu disse:
+                                o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos
+                                animais, sempre que
+                                você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás. O que é
+                                algo muito importante!<br>
+                                <br>
+
+                                Eu dou dinheiro pra minha filha. Eu dou dinheiro pra ela viajar, então é... é... Já
+                                vivi muito sem dinheiro, já
+                                vivi muito com dinheiro. -Jornalista: Coloca esse dinheiro na poupança que a senhora
+                                ganha R$10 mil por mês. -Dilma:
+                                O que que é R$10 mil?
                             </span>
                         </div>
                     </div>
@@ -190,8 +216,9 @@
                         <!-- Content -->
                         <h6 class="text-uppercase font-weight-bold">Laboratório de Inteligência Aplicada</h6>
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>Aliquam non sagittis tortor, eget lacinia mi. Donec at diam gravida ligula luctus mattis. 
-                            In fringilla purus.
+                        <p>A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese
+                            de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de
+                            analogia com o que acontece na área agrícola.
                         </p>
 
                     </div>
@@ -250,12 +277,13 @@
 
 
 
-    <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="plugins/jquery-drawsvg/public/jquery.drawsvg.min.js"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-
+    <script src="js/animation.js">
+        
+    </script>
 
 
 

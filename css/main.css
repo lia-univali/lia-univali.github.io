@@ -75,9 +75,12 @@ nav.scroll-black {
 
 .home-content{
   position: relative;
-    padding: 25vh 0 25vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     height: 67vh;
+}
+
+.svg-lia{
+  padding-left: 34%;
 }
 
 .home-lia{
@@ -90,6 +93,7 @@ nav.scroll-black {
   font-size: 6vh;
   font-weight: 300;
   line-height: 1.2;
+  margin-top: -5%;
   
 }
 
