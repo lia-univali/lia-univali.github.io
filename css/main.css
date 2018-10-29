@@ -18,11 +18,11 @@ html{
 }
 
 ::-moz-selection { /* Code for Firefox */
-  background: rgb(206, 206, 255);
+  background: rgb(214, 214, 248);
 }
 
 ::selection {
-  background: rgb(206, 206, 255);
+  background: rgb(214, 214, 248);
 }
 
 .site-header {
