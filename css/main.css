@@ -237,3 +237,16 @@ nav.scroll-black {
 .icones{
   font-size: 20px;
 }
+
+
+
+
+.linha_altura{
+  height: 1px;
+  width: 0px;
+}
+
+.cor_linha{
+  color: white;
+  background-color: white;
+}
