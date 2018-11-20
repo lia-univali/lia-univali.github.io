@@ -181,6 +181,10 @@ nav.scroll-black {
   margin-top: 1%;
 }
 
+.margin-top-5{
+  margin-top: 5%;
+}
+
 .margin-top-15{
   margin-top: 15%;
 }
@@ -238,9 +242,6 @@ nav.scroll-black {
   font-size: 20px;
 }
 
-
-
-
 .linha_altura{
   height: 1px;
   width: 0px;
@@ -250,3 +251,4 @@ nav.scroll-black {
   color: white;
   background-color: white;
 }
+

@@ -19,9 +19,9 @@ window.onscroll = () => {
         }
         else if (this.scrollY > 435 && this.scrollY < 1110) {
             nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
-        } else if (this.scrollY > 1100 && this.scrollY < 2515) {
+        } else if (this.scrollY > 1100 && this.scrollY < 2350) {
             nav.className = 'site-header-white sticky-top py-1 scroll-black shadow';
-        } else if (this.scrollY > 2515 && this.scrollY < 4000) {
+        } else if (this.scrollY > 2350 && this.scrollY < 4000) {
             nav.className = 'site-header-dark sticky-top py-1 scroll-white shadow';
         }
     } else if (height >= 900 && height < 1080) {
