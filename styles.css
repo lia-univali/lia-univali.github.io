@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.jumbotron {
+  background-color: #111;
+  color: #f8f9fa;
+  padding: 12% 10%;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.jumbotron img {
+  max-width: 300px;
+}
+
+.jumbotron .arrow-container {
+  text-align: center;
+  color: #fff;
+  margin-top: -20px;
+  font-size: 2em;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  padding-bottom: 25px;
+}
+
+.jumbotron .arrow-container:hover {
+  color: #333;
+}
+
+section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+section h2 {
+  font-weight: bold;
+}
+
+section#projetos .row {
+  margin-top: 50px;
+}
+
+section#projetos .row .projeto {
+  background-color: #fff;
+  padding: 20px;
+}
+
+section#integrantes {
+  color: #f8f9fa;
+  background-color: #111;
+}
+
+section#integrantes .row {
+  padding-top: 50px;
+}
+
+section#integrantes .row .pessoa {
+  padding: 20px;
+}
+
+section#integrantes .row .pessoa img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+/*# sourceMappingURL=styles.css.map */
