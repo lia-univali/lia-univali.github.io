@@ -66,6 +66,7 @@ section{
       .projeto{
         background-color: #fff;
         padding: 20px;
+        margin:10px;
       }
     }
   }
@@ -79,6 +80,16 @@ section{
         img{
           border-radius: 50%;
           max-width: 150px;
+          border: 5px solid $branco;
+        }
+        .links{
+          a{
+            color: $ciano !important;
+            margin-right: 10px;
+          }
+          a[type=button]{
+            appearance: none;
+          }
         }
       }
     }

@@ -69,6 +69,7 @@ section#projetos .row {
 section#projetos .row .projeto {
   background-color: #fff;
   padding: 20px;
+  margin: 10px;
 }
 
 section#integrantes {
@@ -87,5 +88,17 @@ section#integrantes .row .pessoa {
 section#integrantes .row .pessoa img {
   border-radius: 50%;
   max-width: 150px;
+  border: 5px solid #f8f9fa;
+}
+
+section#integrantes .row .pessoa .links a {
+  color: #02CAFD !important;
+  margin-right: 10px;
+}
+
+section#integrantes .row .pessoa .links a[type=button] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 /*# sourceMappingURL=styles.css.map */

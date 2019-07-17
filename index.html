@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="LIA"/>
     <meta property="og:description" content="Laboratório de Inteligência Aplicada" />
-    <meta property="og:url" content="http://www.lia.com" />
+    <meta property="og:url" content="https://lia-univali.github.io/" />
     <meta property="og:site_name" content="Lia" />
     <meta property="og:image" content="" /><
       
@@ -77,19 +77,10 @@
           <i class="fas fa-arrow-circle-down"></i>
         </div>
       </section>
-      
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <!-- <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-      </div> -->
+
       <section id="sobre">
         <div class="container">
           <h2 class="">LIA</h2>
-          <!-- Example row of columns -->
           <div class="row">
             <div class="col-md-6 text-right">
               <h2>LABORATÓRIO DE INTELIGÊNCIA APLICADA.</h2>
@@ -100,14 +91,12 @@
             </div>
           </div>
         </div>
-      </section> <!-- /container -->
+      </section> 
       
       <section id="projetos">
         <div class="container">
-
           <h2 class="">Projetos</h2>
           <span class="">Principais Projetos do Laboratório.</span>
-          <!-- Example row of columns -->
           <div class="row">
             <div class="col-md-4">
               <div class="projeto">
@@ -132,28 +121,45 @@
             </div>
           </div>
         </div>
-      </section> <!-- /container -->
-      
-      
+      </section> 
       <section id="integrantes">
         <div class="container">
           <h2 class="">Integrantes</h2>
-          <div class="row">
-            
-            <div class="col-md-3">
-              <div class="pessoa">
-                <img src="img/pessoas/IMG_0951.jpg" class="img-fluid"/>
-                <h4>Rodrigo</h4>
-              </div>
-            </div>
-
-          </div>
+          <div class="row" id="lista-integrantes"></div>
         </div>
       </section>
       <footer class="" id="contato">
 
       </footer>
     </main>
+    <div class="invisible" id="modelo-pessoa">
+      <div class="col-md-3">
+        <div class="pessoa">
+            <img src="{foto}" class="img-fluid"/>
+            <h4>{nome}</h4>
+            <div class="links">
+              {links}
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content" id="bio-modal">
+          <div class="modal-header">
+            <h5 class="modal-title">Bio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="bio-content">Modal body text goes here.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -165,6 +171,8 @@
     <script src="js/vanta.dots.min.js"></script>
     <script src="js/vanta.net.min.js"></script>
     <script src="js/animate.js"></script>
+
+    <script src="js/pessoas.js"></script>
 
   </body>
 </html>
