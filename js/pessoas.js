@@ -5,14 +5,18 @@ var integrantes = [
         "bio":"Formado em Ciência da Computação (Univali), com ênfase em educação, sistemas de computação e jogos. Gosto de programar e criar interfaces, no meu tempo livre costumo de assistir filmes, jogar videogames (principalmente os cooperativos) e ler histórias em quadrinhos. Bolsista CAPES PROSUC (Mestrando) no Laboratório de Inteligência Aplicada da Univali.",
         "links":{
             "site":"https://alissonsteffens.com/",
-            "git": "https://github.com/AlissonSteffens",
-            "mail": "ali.steffens@gmail.com"
+            "git": "https://github.com/AlissonSteffens"
         }
     },
     {
         "nome": "Rudson",
         "img": "https://d15mvavv27jnvy.cloudfront.net/gqngx/5ceabd865e47dc2dda4296f73181fef0.jpg",
-        "bio":"Além de desenvolvedor web também é acadêmico de Ciência da Computação, pesquisador no Laboratório de Inteligência Aplicada da Univali e entusiasta de teoria dos grafos e computação paralela e distribuída. Desafios são bem vindos, não mede esforços para aprender e conhecer novas tecnologias. Já superou a pestana no violão."
+        "bio":"Além de desenvolvedor web também é acadêmico de Ciência da Computação, pesquisador no Laboratório de Inteligência Aplicada da Univali e entusiasta de teoria dos grafos e computação paralela e distribuída. Desafios são bem vindos, não mede esforços para aprender e conhecer novas tecnologias. Já superou a pestana no violão.",
+        "links":{
+            "site":"http://rudson.me/ndes",
+            "git": "https://github.com/rudsonm",
+            "mail": "rudsonfsmendes@gmail.com"
+        }
     }
 ]
 $(document).ready(()=>{

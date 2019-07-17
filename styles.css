@@ -4,6 +4,10 @@ body {
   color: #111;
 }
 
+p {
+  color: #444;
+}
+
 h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
@@ -32,7 +36,18 @@ nav .nav-item a.nav-link:hover {
 }
 
 .jumbotron img {
-  max-width: 300px;
+  max-width: 80%;
+}
+
+@media (min-width: 800px) {
+  .jumbotron img {
+    max-width: 300px;
+  }
+}
+
+.jumbotron .hero-subtitle {
+  font-size: 2rem;
+  color: #f8f9fa;
 }
 
 .jumbotron .arrow-container {
@@ -50,7 +65,7 @@ nav .nav-item a.nav-link:hover {
 }
 
 .jumbotron .arrow-container:hover {
-  color: #333;
+  color: #111;
 }
 
 section {

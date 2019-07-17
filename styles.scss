@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 $preto: #111;
+$cinza: #444;
 $branco: #f8f9fa;
 $azul: #043968;
 $ciano: #02CAFD;
 body{
   font-family: 'Montserrat', sans-serif;
   color: $preto;
+}
+p{
+  color: $cinza;
 }
 h2{
   font-size: 2rem;
@@ -34,7 +38,14 @@ nav{
   margin-bottom: 0;
   border-radius: 0;
   img{
-    max-width: 300px;
+    max-width: 80%;
+    @media (min-width: 800px) {
+      max-width: 300px;
+    }
+  }
+  .hero-subtitle{
+    font-size: 2rem;
+    color: $branco;
   }
   .arrow-container{
     text-align: center;
@@ -48,10 +59,9 @@ nav{
     transition: 500ms;
     padding-bottom: 25px;
     &:hover{
-      color: #333;
+      color: $preto;
     }
   }
-
 }
 
 section{
