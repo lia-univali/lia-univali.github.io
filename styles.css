@@ -89,16 +89,39 @@ section#integrantes .row .pessoa img {
   border-radius: 50%;
   max-width: 150px;
   border: 5px solid #f8f9fa;
+  margin-bottom: 20px;
 }
 
 section#integrantes .row .pessoa .links a {
   color: #02CAFD !important;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 section#integrantes .row .pessoa .links a[type=button] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+section#artigos #lista-artigos a {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #043968 !important;
+}
+
+section#artigos #lista-artigos a:hover {
+  color: #02CAFD !important;
+}
+
+footer {
+  background-color: #111;
+  margin: 0;
+  padding: 5% 10%;
+  color: #f8f9fa;
+}
+
+footer p {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

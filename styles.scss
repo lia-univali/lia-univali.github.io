@@ -81,18 +81,40 @@ section{
           border-radius: 50%;
           max-width: 150px;
           border: 5px solid $branco;
+          margin-bottom: 20px;
         }
         .links{
           a{
             color: $ciano !important;
             margin-right: 10px;
+            margin-left: 10px;
           }
           a[type=button]{
             appearance: none;
           }
         }
       }
+    } 
+  }
+  &#artigos{
+    #lista-artigos{
+      a{
+        transition: 500ms;
+        color: $azul !important;
+        &:hover{
+          color: $ciano !important;
+        }
+      }
+      
     }
-    
+  }
+}
+footer{
+  background-color: $preto;
+  margin: 0;
+  padding: 5% 10%;
+  color: $branco;
+  p{
+    margin: 0;
   }
 }
