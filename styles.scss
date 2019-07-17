@@ -21,7 +21,13 @@ nav{
     a.nav-link{
       color: $preto !important;
       &:hover{
+        color: $ciano !important;
+      }
+    }
+    &.active{
+      a.nav-link{
         color: $azul !important;
+        // font-weight: bold;
       }
     }
   }

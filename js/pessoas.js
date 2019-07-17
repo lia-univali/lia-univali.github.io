@@ -1,7 +1,7 @@
 var integrantes = [
     {
         "nome": "Alisson",
-        "img": "https://lh6.googleusercontent.com/uNUgr3kunsngF1eH8KFlWgdOeRCNH5VjNlSrXmxVKnjPfq7rHIbA_Fm3O2jeMkygLDYXRV9opO0_RpDEbeQ4=w1530-h769",
+        "img": "https://media.licdn.com/dms/image/C5603AQFUYnpBaDP78w/profile-displayphoto-shrink_200_200/0?e=1568851200&v=beta&t=oFKmtLQwZF0QAvAqVWbzQcFnGlEhnaCQIyCg6d1R2o0",
         "bio":"Formado em Ciência da Computação (Univali), com ênfase em educação, sistemas de computação e jogos. Gosto de programar e criar interfaces, no meu tempo livre costumo de assistir filmes, jogar videogames (principalmente os cooperativos) e ler histórias em quadrinhos. Bolsista CAPES PROSUC (Mestrando) no Laboratório de Inteligência Aplicada da Univali.",
         "links":{
             "site":"https://alissonsteffens.com/",
@@ -10,7 +10,7 @@ var integrantes = [
     },
     {
         "nome": "Rudson",
-        "img": "https://d15mvavv27jnvy.cloudfront.net/gqngx/5ceabd865e47dc2dda4296f73181fef0.jpg",
+        "img": "https://media.licdn.com/dms/image/C4E03AQER6pVTLXQ_aQ/profile-displayphoto-shrink_800_800/0?e=1568851200&v=beta&t=cl30wlzd4PrlifIjkmqBL-16OQMPSzv9hYzq8lTFjuA",
         "bio":"Além de desenvolvedor web também é acadêmico de Ciência da Computação, pesquisador no Laboratório de Inteligência Aplicada da Univali e entusiasta de teoria dos grafos e computação paralela e distribuída. Desafios são bem vindos, não mede esforços para aprender e conhecer novas tecnologias. Já superou a pestana no violão.",
         "links":{
             "site":"http://rudson.me/ndes",

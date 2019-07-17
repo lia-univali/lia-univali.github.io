@@ -18,6 +18,10 @@ nav .nav-item a.nav-link {
 }
 
 nav .nav-item a.nav-link:hover {
+  color: #02CAFD !important;
+}
+
+nav .nav-item.active a.nav-link {
   color: #043968 !important;
 }
 
