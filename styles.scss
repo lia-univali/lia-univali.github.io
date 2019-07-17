@@ -2,7 +2,8 @@
 
 $preto: #111;
 $branco: #f8f9fa;
-
+$azul: #043968;
+$ciano: #02CAFD;
 body{
   font-family: 'Montserrat', sans-serif;
   color: $preto;
@@ -10,6 +11,16 @@ body{
 h2{
   font-size: 2rem;
   padding-bottom: 1rem;
+}
+nav{
+  .nav-item{
+    a.nav-link{
+      color: $preto !important;
+      &:hover{
+        color: $azul !important;
+      }
+    }
+  }
 }
 .bg-light{
   background-color: #fff !important;

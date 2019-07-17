@@ -9,6 +9,14 @@ h2 {
   padding-bottom: 1rem;
 }
 
+nav .nav-item a.nav-link {
+  color: #111 !important;
+}
+
+nav .nav-item a.nav-link:hover {
+  color: #043968 !important;
+}
+
 .bg-light {
   background-color: #fff !important;
 }
