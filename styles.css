@@ -69,7 +69,7 @@ nav .nav-item.active a.nav-link {
 }
 
 .jumbotron .arrow-container:hover {
-  color: #111;
+  color: #02CAFD;
 }
 
 section {
@@ -115,6 +115,12 @@ section#integrantes .row .pessoa .links a {
   color: #02CAFD !important;
   margin-right: 10px;
   margin-left: 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+section#integrantes .row .pessoa .links a:hover {
+  color: #043968 !important;
 }
 
 section#integrantes .row .pessoa .links a[type=button] {

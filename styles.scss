@@ -65,7 +65,7 @@ nav{
     transition: 500ms;
     padding-bottom: 25px;
     &:hover{
-      color: $preto;
+      color: $ciano;
     }
   }
 }
@@ -104,7 +104,12 @@ section{
             color: $ciano !important;
             margin-right: 10px;
             margin-left: 10px;
+            transition: 500ms;
+            &:hover{
+              color: $azul !important;
+            }
           }
+          
           a[type=button]{
             appearance: none;
           }

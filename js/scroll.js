@@ -11,9 +11,7 @@ $(document).ready(function () {
     });
   })
   $('.goto').click(function () {
-    var height = $(this.dataset.to).offset().top
-    $('html, body').animate({scrollTop: height}, 'ease')
-    if (this.dataset.to === '#recursos') {
-      $('#nav-download').show(200)
-    }
+    var nav = $('.navbar').height()
+    var height = ($(this.dataset.to).offset().top)-nav
+    $('html, body').animate({scrollTop: height}, 'ease')    
   })
