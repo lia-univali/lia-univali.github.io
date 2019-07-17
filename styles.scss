@@ -83,6 +83,17 @@ section{
         background-color: #fff;
         padding: 20px;
         margin:10px;
+        .btn{
+          &#btn-cassie{
+            color: #077B5C;
+          }
+          &#btn-b{
+            color: #EF9208;
+          }
+          &#btn-c{
+            color: #9F24F3;
+          }
+        }
       }
     }
   }

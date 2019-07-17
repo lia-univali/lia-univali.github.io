@@ -91,6 +91,18 @@ section#projetos .row .projeto {
   margin: 10px;
 }
 
+section#projetos .row .projeto .btn#btn-cassie {
+  color: #077B5C;
+}
+
+section#projetos .row .projeto .btn#btn-b {
+  color: #EF9208;
+}
+
+section#projetos .row .projeto .btn#btn-c {
+  color: #9F24F3;
+}
+
 section#integrantes {
   color: #f8f9fa;
   background-color: #111;
