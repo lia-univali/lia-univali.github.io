@@ -61,7 +61,6 @@ nav .nav-item.active a.nav-link {
 
 .jumbotron .arrow-container {
   text-align: center;
-  color: #fff;
   margin-top: -20px;
   font-size: 2em;
   bottom: 0;
@@ -73,7 +72,11 @@ nav .nav-item.active a.nav-link {
   padding-bottom: 25px;
 }
 
-.jumbotron .arrow-container:hover {
+.jumbotron .arrow-container i {
+  color: #f8f9fa;
+}
+
+.jumbotron .arrow-container i:hover {
   color: #02CAFD;
 }
 
@@ -160,11 +163,17 @@ section#integrantes .row .pessoa:hover {
   background-color: #111111fe;
 }
 
+section#integrantes .row .pessoa:hover img {
+  border: 5px solid #02CAFD;
+}
+
 section#integrantes .row .pessoa img {
   border-radius: 50%;
   max-width: 150px;
   border: 5px solid #f8f9fa;
   margin-bottom: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 section#integrantes .row .pessoa .links a {

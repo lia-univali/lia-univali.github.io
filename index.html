@@ -78,7 +78,7 @@
           <p class="hero-subtitle">Laboratório de Inteligência Aplicada</p>
         </div>
         <div class="arrow-container" >
-          <i class="fas fa-arrow-circle-down goto hvr-hang" data-to="#sobre"></i>
+          <i class="fas fa-arrow-circle-down hvr-hang goto" data-to="#sobre"> </i>
         </div>
       </section>
 
@@ -151,7 +151,10 @@
     <div class="d-none" id="modelo-pessoa">
       <div class="col-md-3">
         <div class="pessoa">
-            <img src="{foto}" class="img-fluid"/>
+            <div class="img-container">
+                <img src="{foto}" class="img-fluid"/>
+            </div>
+            
             <h4>{nome}</h4>
             <div class="links">
               {links}
