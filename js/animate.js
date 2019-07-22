@@ -6,9 +6,9 @@
 //   size: 6.30,
 //   spacing: 58.00
 // })
-VANTA.NET({
-  el: "#header",
-  color: 0x555555,
-  backgroundColor: 0x111111,
-  points: 8.00
-})
+// VANTA.NET({
+//   el: "#header",
+//   color: 0x555555,
+//   backgroundColor: 0x111111,
+//   points: 8.00
+// })

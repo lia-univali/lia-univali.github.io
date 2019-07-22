@@ -27,22 +27,19 @@
     <link href="img/icon.png" rel="shortcut icon" />
     
 
-    <!-- Bootstrap CSS -->
-    
+    <!-- Bootstrap CSS -->    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="hover-min.css"/>
-    
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://kit.fontawesome.com/e3e03f2b7c.js"></script>
-
+    
     <title>LIA</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/liablack.svg" height="32px"/></a>
+        <a class="navbar-brand hvr-grow" href="#"><img src="img/liablack.svg" height="32px"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,23 +62,24 @@
           </ul>
         </div>
         <a href="https://www.univali.br/Paginas/default.aspx" target="_blank">
-          <img src="img/univali.svg" height="50px">
+          <img class="hvr-shrink" src="img/univali.svg" height="50px">
         </a>
         
       </div>
     </nav>
     
     <main role="main">
+      <div id="particles-js"></div>
       <section class="jumbotron" id="header">
         <div class="container">
           <h1 class="display-3"><img src="img/lialines.svg" class="img-fluid"></h1>
           <p class="hero-subtitle">Laboratório de Inteligência Aplicada</p>
         </div>
-        <div class="arrow-container" >
+        <!-- <div class="arrow-container" >
           <i class="fas fa-arrow-circle-down hvr-hang goto" data-to="#sobre"> </i>
-        </div>
+        </div> -->
       </section>
-
+      
       <section id="sobre">
         <div class="container">
           <div class="row">
@@ -195,6 +193,9 @@
     <script src="js/artigos.js"></script>
 
     <script src="js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+
 
   </body>
 </html>

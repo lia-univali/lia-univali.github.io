@@ -38,7 +38,8 @@ var integrantes = [
             "mail": "rudsonfsmendes@gmail.com",
             "linkedin": "https://www.linkedin.com/in/rudson-mendes/"
         }
-    }
+    },
+    
 ]
 $(document).ready(()=>{
     integrantes.forEach(element => {
