@@ -13,6 +13,11 @@ h2 {
   padding-bottom: 1rem;
 }
 
+nav {
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
 nav .nav-item a.nav-link {
   color: #111 !important;
 }
@@ -81,6 +86,12 @@ section h2 {
   font-weight: bold;
 }
 
+section#projetos {
+  background-color: #fbfbfb;
+  background-image: url("img/back.svg");
+  background-size: cover;
+}
+
 section#projetos .row {
   margin-top: 50px;
 }
@@ -106,6 +117,8 @@ section#projetos .row .projeto .btn#btn-c {
 section#integrantes {
   color: #f8f9fa;
   background-color: #111;
+  background-image: url("img/chars.svg");
+  background-size: cover;
 }
 
 section#integrantes .row {

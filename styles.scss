@@ -17,6 +17,7 @@ h2{
   padding-bottom: 1rem;
 }
 nav{
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.3);
   .nav-item{
     a.nav-link{
       color: $preto !important;
@@ -76,7 +77,14 @@ section{
   h2{
     font-weight: bold;
   }
+  &#sobre{
+    
+  }
   &#projetos{
+    background-color: #fbfbfb;
+    background-image: url('img/back.svg');
+    background-size: cover;
+    // background-attachment: fixed;
     .row{
       margin-top: 50px;
       .projeto{
@@ -100,6 +108,9 @@ section{
   &#integrantes{
     color:$branco;
     background-color: $preto;
+    background-image: url('img/chars.svg');
+    background-size: cover;
+    // background-attachment: fixed;
     .row{
       padding-top: 50px;
       .pessoa{
