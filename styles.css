@@ -138,12 +138,26 @@ section#integrantes {
   background-size: cover;
 }
 
+section#integrantes h2 {
+  background-color: #111;
+}
+
 section#integrantes .row {
   padding-top: 50px;
 }
 
 section#integrantes .row .pessoa {
   padding: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #111111f2;
+  border-radius: 20px;
+}
+
+section#integrantes .row .pessoa:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #111111fe;
 }
 
 section#integrantes .row .pessoa img {
@@ -162,7 +176,7 @@ section#integrantes .row .pessoa .links a {
 }
 
 section#integrantes .row .pessoa .links a:hover {
-  color: #017998 !important;
+  color: #02a2ca !important;
 }
 
 section#integrantes .row .pessoa .links a[type=button] {

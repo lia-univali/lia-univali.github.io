@@ -119,12 +119,20 @@ section{
     background-color: $preto;
     background-image: url('img/chars.svg');
     background-size: cover;
-    // background-attachment: fixed;
-    
+    h2{
+      background-color: $preto;
+    }
     .row{
       padding-top: 50px;
       .pessoa{
         padding: 20px;
+        transition: all .2s ease-in-out; 
+        background-color: #111111f2;
+        border-radius: 20px;
+        &:hover{
+          transform: scale(1.03);
+          background-color: #111111fe;
+        }
         img{
           border-radius: 50%;
           max-width: 150px;
@@ -138,7 +146,7 @@ section{
             margin-left: 10px;
             transition: 500ms;
             &:hover{
-              color: darken($ciano, 20%) !important;
+              color: darken($ciano, 10%) !important;
             }
           }
           
