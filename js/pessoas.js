@@ -37,16 +37,16 @@ $(document).ready(()=>{
         
         if(element.links){    
             if(element.links.site){
-                links += "<a href='"+element.links.site+"' title='website' target='_blank'><i class='fas fa-globe'></i></a>"
+                links += "<a href='"+element.links.site+"' title='website' class='hvr-bounce-in' target='_blank'><i class='fas fa-globe'></i></a>"
             }
             if(element.links.git){
-                links += "<a href='"+element.links.git+"' title='github' target='_blank'><i class='fab fa-github'></i></a>"
+                links += "<a href='"+element.links.git+"' title='github' class='hvr-bounce-in' target='_blank'><i class='fab fa-github'></i></a>"
             }
             if(element.links.mail){
-                links += "<a href='mailto:"+element.links.mail+"' title='email'><i class='fas fa-envelope'></i></a>"
+                links += "<a href='mailto:"+element.links.mail+"' title='email' class='hvr-bounce-in'><i class='fas fa-envelope'></i></a>"
             }
         }
-        links += "<a type='button' data-toggle='modal' data-target='.bd-example-modal-sm' data-nome='"+element.nome+"' data-bio='"+element.bio+"' title='bio'><i class='fas fa-align-left'></i></a>"
+        links += "<a type='button' data-toggle='modal' data-target='.bd-example-modal-sm' data-nome='"+element.nome+"' data-bio='"+element.bio+"' title='bio' class='hvr-bounce-in'><i class='fas fa-align-left'></i></a>"
         div = div.replace('{links}',links)
         
         
