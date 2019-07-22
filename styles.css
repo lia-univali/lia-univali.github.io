@@ -169,9 +169,19 @@ footer {
   margin: 0;
   padding: 5% 10%;
   color: #f8f9fa;
+  text-align: right;
 }
 
 footer p {
   margin: 0;
+  color: #f8f9fa;
+}
+
+footer p .fa-code {
+  color: #02CAFD;
+}
+
+footer p .fa-heart {
+  color: #FC427B;
 }
 /*# sourceMappingURL=styles.css.map */

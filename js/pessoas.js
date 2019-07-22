@@ -9,6 +9,15 @@ var integrantes = [
         }
     },
     {
+        "nome": "Alex",
+        "img": "https://media.licdn.com/dms/image/C4E03AQFnLBdQgKMz3w/profile-displayphoto-shrink_800_800/0?e=1569456000&v=beta&t=XiauclvFz9rqNHkucJUDarKc355BNhcQ__X_9DsEz-E",
+        "bio":"Formado em Ciência da Computação (Univali -2015) e possui Mestrado em Computação Aplicada (Univali-2017). Atuando principalmente em Teoria da Computação, Redes Complexas, Heurísticas e Metaheurísticas. Atualmente sou docente na Univali, desenvolvedor na Treetechs e Betricks. Gosto de esportes, filmes, músicas e estudar assuntos sobre a vida e aquele um kilo e meio de massa cinzenta, que chama de cérebro. <b> Resolve </b>.",
+        "links":{
+            "git": "https://github.com/alexrese",
+            "mail": "alexrese@univali.br"
+        }
+    },
+    {
         "nome": "Rudson",
         "img": "https://media.licdn.com/dms/image/C4E03AQER6pVTLXQ_aQ/profile-displayphoto-shrink_800_800/0?e=1568851200&v=beta&t=cl30wlzd4PrlifIjkmqBL-16OQMPSzv9hYzq8lTFjuA",
         "bio":"Além de desenvolvedor web também é acadêmico de Ciência da Computação, pesquisador no Laboratório de Inteligência Aplicada da Univali e entusiasta de teoria dos grafos e computação paralela e distribuída. Desafios são bem vindos, não mede esforços para aprender e conhecer novas tecnologias. Já superou a pestana no violão.",

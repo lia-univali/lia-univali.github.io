@@ -157,7 +157,15 @@ footer{
   margin: 0;
   padding: 5% 10%;
   color: $branco;
+  text-align: right;
   p{
+    .fa-code{
+      color: $ciano;
+    }
+    .fa-heart{
+      color: #FC427B;
+    }
     margin: 0;
+    color: $branco;
   }
 }
