@@ -21,7 +21,9 @@ nav{
   .nav-item{
     a.nav-link{
       color: $preto !important;
+      transition: all .01s ease-in-out; 
       &:hover{
+        transform: scale(1.05);
         color: $ciano !important;
       }
     }
@@ -127,15 +129,6 @@ section{
           background-color: rgba(255,255,255,0.95);
         }
         .btn{
-          &#btn-cassie{
-            color: #077B5C;
-          }
-          &#btn-b{
-            color: #EF9208;
-          }
-          &#btn-c{
-            color: #9F24F3;
-          }
           i{
             margin-left: 10px;
           }
@@ -157,11 +150,12 @@ section{
         padding: 20px;
         margin: 20px;
         transition: all .2s ease-in-out; 
-        background-color: #111111f2;
+        background-color: #11111155;
         border-radius: 20px;
         &:hover{
           transform: scale(1.03);
           background-color: #111111fe;
+          // box-shadow: 0px 2px 8px 2px #02CAFDee;
           img{
             border: 5px solid $ciano;
           }
@@ -200,6 +194,16 @@ section{
       background-color: #fff;
     }
     #lista-artigos{
+      li{
+        transition: all .2s ease-in-out;
+        z-index: 1;
+        &:hover{
+          transform: scale(1.02);
+          z-index: 2;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+          background: #fafafa;
+        }
+      }
       a{
         transition: 500ms;
         color: $azul !important;
@@ -208,6 +212,15 @@ section{
         }
       }
       
+    }
+  }
+}
+.modal{
+  .modal-header{
+    
+    .modal-title{
+      background: #fff;
+      padding: 10px 10px 2px 10px;
     }
   }
 }

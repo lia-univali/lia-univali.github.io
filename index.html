@@ -98,31 +98,7 @@
         <div class="container">
           <h2 class="">Projetos</h2>
           <span class="">Principais Projetos do Laboratório.</span>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="projeto">
-                <img src="img/ecassie.svg" class="img-fluid">
-                <h3>e-c.a.s.s.i.e.</h3>
-                <p>Ferramenta para análise e mapeamento de regiões costeiras.</p>
-                <a class="btn hvr-icon-forward" id="btn-cassie" href="#">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="projeto">
-                <img src="img/projetob.svg" class="img-fluid">
-                <h3>e-c.a.s.s.i.e.</h3>
-                <p>Ferramenta para análise e mapeamento de regiões costeiras.</p>
-                <a class="btn hvr-icon-forward"" id="btn-b" href="#">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="projeto">
-                <img src="img/projetoc.svg" class="img-fluid">
-                <h3>e-c.a.s.s.i.e.</h3>
-                <p>Ferramenta para análise e mapeamento de regiões costeiras.</p>
-                <a class="btn hvr-icon-forward"" id="btn-c" href="#">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a>
-              </div>
-            </div>
+          <div class="row" id="lista-projetos">
           </div>
         </div>
       </section>
@@ -146,13 +122,24 @@
           <p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="https://alissonsteffens.com/">Alisson</a></p>
       </footer>
     </main>
+
+    <div class="d-none" id="modelo-projeto">
+      <div class="col-md-6 col-lg-4">
+        <div class="projeto">
+          <img src="img/liablack.svg" class="img-fluid">
+          <h3>{projeto}</h3>
+          <p>{desc}</p>
+          <a class="btn hvr-icon-forward" href="{btnlink}" target="_blank" style="color:#000;">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a>
+        </div>
+      </div>
+    </div>
+
     <div class="d-none" id="modelo-pessoa">
       <div class="col-md-3">
         <div class="pessoa">
             <div class="img-container">
-                <img src="{foto}" class="img-fluid"/>
+                <img src="img/liablack.svg" class="img-fluid"/>
             </div>
-            
             <h4>{nome}</h4>
             <div class="links">
               {links}
@@ -162,7 +149,7 @@
     </div>
 
     <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog">
         <div class="modal-content" id="bio-modal">
           <div class="modal-header">
             <h5 class="modal-title">Bio</h5>
@@ -173,7 +160,6 @@
           <div class="modal-body">
             <p class="bio-content">Modal body text goes here.</p>
           </div>
-          
         </div>
       </div>
     </div>
@@ -189,6 +175,7 @@
     <script src="js/vanta.net.min.js"></script>
     <script src="js/animate.js"></script>
 
+    <script src="js/projetos.js"></script>
     <script src="js/pessoas.js"></script>
     <script src="js/artigos.js"></script>
 

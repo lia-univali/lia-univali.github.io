@@ -66,7 +66,7 @@ $(document).ready(()=>{
     integrantes.forEach(element => {
         let div = $('#modelo-pessoa').html()
         div = div.replace('{nome}',element.nome)
-        div = div.replace('{foto}','img/pessoas/'+element.nome.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")+'.jpg')
+        div = div.replace('img/liablack.svg','img/pessoas/'+element.nome.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")+'.jpg')
         let links = ""
         
         if(element.links){    
