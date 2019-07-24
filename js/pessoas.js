@@ -56,11 +56,18 @@ var integrantes = [
         "links":{
             "site":"http://rudson.me/ndes",
             "git": "https://github.com/rudsonm",
-            "mail": "rudsonfsmendes@gmail.com",
             "linkedin": "https://www.linkedin.com/in/rudson-mendes/"
         }
     },
-    
+    {
+        "nome": "Felski",
+        "bio":"Formado em Ciência da Computação (Univali 2008) e possui Mestrado em Computação Aplicada (Univali 2012). Atuando principalmente em Sistemas Embarcados, Redes em Chip e Tolerância a Faltas. Atualmente sou docente na Univali, Unisul e Uniavan. Gosto do Escotismo, RPG, seriados, história antiga e recentemente estou me aventurando nas áreas de microeletrônica e mobile.",
+        "links":{
+            "site":"http://rudson.me/ndes",
+            "git": "https://github.com/rudsonm",
+            "linkedin": "https://www.linkedin.com/in/rudson-mendes/"
+        }
+    },
 ]
 $(document).ready(()=>{
     integrantes.forEach(element => {
@@ -83,18 +90,18 @@ $(document).ready(()=>{
                 links += "<a href='mailto:"+element.links.mail+"' title='email' class='hvr-bounce-in'><i class='fas fa-envelope'></i></a>"
             }
         }
-        links += "<a href='' type='button' data-toggle='modal' data-target='.bd-example-modal-sm' data-nome='"+element.nome+"' data-bio='"+element.bio+"' title='bio' class='hvr-bounce-in'><i class='fas fa-align-left'></i></a>"
+        links += "<a href='' type='button' data-toggle='modal' data-target='.biomodal' data-nome='"+element.nome+"' data-bio='"+element.bio+"' title='bio' class='hvr-bounce-in'><i class='fas fa-align-left'></i></a>"
         div = div.replace('{links}',links)
         
         
         $('#lista-integrantes').append(div);
     });
-    $('.bd-example-modal-sm').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) // Button that triggered the modal
-    var recipient = button.data('bio') // Extract info from data-* attributes
-    var nome = button.data('nome') // Extract info from data-* attributes
-    var modal = $(this)
-    modal.find('.modal-title').html(nome)
-    modal.find('.bio-content').html(recipient)
+    $('.biomodal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('bio') // Extract info from data-* attributes
+        var nome = button.data('nome') // Extract info from data-* attributes
+        var modal = $(this)
+        modal.find('.modal-title').html(nome)
+        modal.find('.bio-content').html(recipient)
     })
 })

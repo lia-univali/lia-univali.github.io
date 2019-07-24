@@ -124,12 +124,13 @@
     </main>
 
     <div class="d-none" id="modelo-projeto">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <div class="projeto">
           <img src="img/liablack.svg" class="img-fluid">
           <h3>{projeto}</h3>
           <p>{desc}</p>
           <a class="btn hvr-icon-forward" href="{btnlink}" target="_blank" style="color:#000;">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a>
+          <!-- <a class="btn hvr-icon-forward" href="" data-toggle='modal' data-target='.projectmodal' data-desc="{text}" data-project="{projectName}" style="color:#000;">Saiba Mais <i class="fas fa-arrow-right hvr-icon"></i></a> -->
         </div>
       </div>
     </div>
@@ -148,7 +149,7 @@
       </div>
     </div>
 
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal fade biomodal" tabindex="-1" role="dialog" aria-labelledby="bioModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content" id="bio-modal">
           <div class="modal-header">
@@ -163,17 +164,28 @@
         </div>
       </div>
     </div>
+
+    <!-- <div class="modal fade projectmodal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content" id="project-modal">
+          <div class="modal-header">
+            <h5 class="modal-title">Bio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="project-content">Modal body text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script src="js/three.r92.min.js"></script>
-    <!-- <script src="js/vanta.dots.min.js"></script> -->
-    <script src="js/vanta.net.min.js"></script>
-    <script src="js/animate.js"></script>
 
     <script src="js/projetos.js"></script>
     <script src="js/pessoas.js"></script>
