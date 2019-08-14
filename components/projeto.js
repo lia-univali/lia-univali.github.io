@@ -7,14 +7,22 @@ const Projeto = ({project}) => (
         <img src={project.logo} className="img-fluid"/>
         <h3>{project.projeto}</h3>
         <p>{project.desc}</p>
-        <a className="btn hvr-icon-forward myproject" href={project.btnlink} target="_blank">Saiba Mais <i className="fas fa-arrow-right hvr-icon"></i></a>
+        <a className="btn hvr-icon-forward myproject" href={project.btnlink} target="_blank">Saiba Mais</a>
       </div>
       <style jsx>{`
       .img-fluid{
         max-width:100%;
       }
-      a{
+      .icon{
+        width:20px;
+      }
+      .btn{
+        background-color: #fff;
         color: ${project.cor};
+      }
+      .btn:hover{
+        background-color: ${project.cor};
+        color: #fff;
       }
     `}</style>
   </div>

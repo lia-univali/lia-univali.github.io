@@ -22,7 +22,18 @@ export default class Areas extends React.Component {
       
           
         {(areas && areas.length > 0) ? 
-              <ul class="list-group col-md-8 offset-md-2" >{areas.map(area => <li className='list-group-item d-flex justify-content-between align-items-center'>{area.titulo}</li>)}</ul> : <div><span className="loading"></span><p>nada aqui</p></div>}
+              <ul class="list-group col-md-8 offset-md-2" id="lista-artigos">
+              {areas.map(area => 
+                <li className='list-group-item d-flex justify-content-between align-items-center'>
+                  {area.titulo}
+                  <a href={area.link} target="_blank">🔗</a>
+                </li>
+                )}
+              </ul> :<div className="loading-frame">
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+            </div>}
         
         <style jsx>{`
           @keyframes Loading { 
@@ -30,14 +41,19 @@ export default class Areas extends React.Component {
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
           }
-          .date .loading {
-            max-width: 100%;
-            height: 24px;
+          .loading-frame{
+            margin-top:100px;
+          }
+          .loading {
+            width: 100%;
+            margin-bottom: 10px;
+            height: 100px;
+            min-height: 100px;
             border-radius: 4px;
             display: inline-block;
             background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
             background-size: 200% 200%;
-            animation: Loading 2s ease infinite;
+            animation: Loading .4s ease infinite;
           }
         `}</style>
       </div>

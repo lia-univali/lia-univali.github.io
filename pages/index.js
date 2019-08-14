@@ -51,7 +51,7 @@ const Home = () => (
       </div>
     </section>
     <footer class="" id="contato">
-        <p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="https://alissonsteffens.com/">Alisson</a></p>
+        <p><b class="code">💎</b> with <b className="heart">❤</b> by <a href="https://alissonsteffens.com/">Alisson</a></p>
     </footer>
 
 
