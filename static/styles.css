@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #111;
 }
 
@@ -27,11 +27,11 @@ nav .nav-item a.nav-link {
 nav .nav-item a.nav-link:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  color: #02CAFD !important;
+  color: #26A69A !important;
 }
 
 nav .nav-item.active a.nav-link {
-  color: #043968 !important;
+  color: #053f5c !important;
 }
 
 .bg-light {
@@ -77,7 +77,7 @@ nav .nav-item.active a.nav-link {
 }
 
 .jumbotron .arrow-container i:hover {
-  color: #02CAFD;
+  color: #26A69A;
 }
 
 .jumbotron img {
@@ -105,8 +105,8 @@ section h2 {
 }
 
 section#sobre {
-  background: -webkit-gradient(linear, left top, right bottom, from(#02CAFD), to(#043968));
-  background: linear-gradient(to bottom right, #02CAFD, #043968);
+  background: -webkit-gradient(linear, left top, right bottom, from(#26A69A), to(#053f5c));
+  background: linear-gradient(to bottom right, #26A69A, #053f5c);
   background-size: cover;
 }
 
@@ -127,7 +127,7 @@ section#sobre .container p {
 
 section#projetos {
   background-color: #fbfbfb;
-  background-image: url("img/back.svg");
+  background-image: url("img/escolas_color.svg");
   background-size: cover;
 }
 
@@ -138,12 +138,12 @@ section#projetos .row {
 section#projetos .row .projeto {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 20px;
-  margin: 2rem 1rem;
+  padding: 10px;
+  margin: 1rem .5rem;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 section#projetos .row .projeto:hover {
@@ -161,12 +161,8 @@ section#projetos .row .projeto .btn i {
 section#integrantes {
   color: #f8f9fa;
   background-color: #111;
-  background-image: url("img/chars.svg");
+  background-image: url("img/escolas_peb.svg");
   background-size: cover;
-}
-
-section#integrantes h2 {
-  background-color: #111;
 }
 
 section#integrantes .row {
@@ -174,8 +170,8 @@ section#integrantes .row {
 }
 
 section#integrantes .row .pessoa {
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #11111155;
@@ -189,7 +185,7 @@ section#integrantes .row .pessoa:hover {
 }
 
 section#integrantes .row .pessoa:hover img {
-  border: 5px solid #02CAFD;
+  border: 5px solid #26A69A;
 }
 
 section#integrantes .row .pessoa img {
@@ -201,7 +197,7 @@ section#integrantes .row .pessoa img {
 }
 
 section#integrantes .row .pessoa .links a {
-  color: #02CAFD !important;
+  color: #26A69A !important;
   margin-right: 10px;
   margin-left: 10px;
   -webkit-transition: 500ms;
@@ -209,7 +205,7 @@ section#integrantes .row .pessoa .links a {
 }
 
 section#integrantes .row .pessoa .links a:hover {
-  color: #02a2ca !important;
+  color: #1d7d74 !important;
 }
 
 section#integrantes .row .pessoa .links a[type=button] {
@@ -220,12 +216,8 @@ section#integrantes .row .pessoa .links a[type=button] {
 
 section#artigos {
   background-color: #ffffff;
-  background-image: url("img/sobre.svg");
+  background-image: url("img/back.svg");
   background-size: cover;
-}
-
-section#artigos h2 {
-  background-color: #fff;
 }
 
 section#artigos #lista-artigos li {
@@ -250,11 +242,11 @@ section#artigos #lista-artigos li:hover a {
 section#artigos #lista-artigos a {
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #043968 !important;
+  color: #053f5c !important;
 }
 
 section#artigos #lista-artigos a:hover {
-  color: #02CAFD !important;
+  color: #26A69A !important;
 }
 
 .modal .modal-header .modal-title {
@@ -276,7 +268,7 @@ footer p {
 }
 
 footer p .fa-code {
-  color: #02CAFD;
+  color: #26A69A;
 }
 
 footer p .fa-heart {

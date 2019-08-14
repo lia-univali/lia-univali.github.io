@@ -2,7 +2,7 @@ export default (req, res) => {
     let projetos = [
         {
             "projeto": "e-c.a.s.s.i.e.",
-            "desc":"Ferramenta de análise e mapeamento de regiões costeiras.",
+            "desc":"Análise e mapeamento de regiões costeiras.",
             "texto":"",
             "logo": "static/img/projetos/ecassie.svg",
             "btnlink": "https://pt.wikipedia.org/wiki/Cassie_(cantora)",
@@ -10,7 +10,7 @@ export default (req, res) => {
         },
         {
             "projeto": "Esqueleto",
-            "desc":"Estrutura robótica para auxiliar em tarefas.",
+            "desc":"Estrutura robótica para auxiliar humanos em tarefas.",
             "texto":"Estruturas robóticas sobrepostas ao corpo, visam ajudar na realização de tarefas a partir da mimetização de movimentos, tais estruturas são conhecidas como exoesqueletos robóticos, os quais possuem aplicabilidade em diversas áreas. O uso de tal tecnologia vem para trazer capacidades físicas as quais o usuário não possui, podendo entregar ao usuário força sobre humana, altos níveis de resistência ou então recuperar capacidades perdidas. No entanto, métodos de controle de tais exoesqueletos ainda são aplicações especificas, não encontrando um consenso dentro da literatura e trabalhar com sinais biológicos contém uma série de interferências necessitando assim de cuidados para a correta interpretação dos sinais e desta forma a correta ativação dos atuadores de forma a mimetizar os movimentos de seu usuário. Esse trabalho visa desenvolver um método e eficiente de controlar um braço de exoesqueleto com dois graus de liberdade. Para o desenvolvimento de um sistema de controle, com o foco no controle do membro superior do exoesqueleto, o mapeamento da musculatura envolvida na movimentação do braço, o uso de sensores e a captação dos sinais elétricos são necessários, estes sinais são gerados a partir da contração muscular. Para o acionamento correto dos motores, a fim de mimetizar os movimentos efetuados pelo usuário, é necessária a correlação correta dos sinais, dessa forma pretende-se produzir um sistema de controle que é apto para o controle de um braço de exoesqueleto.",
             "logo": "static/img/projetos/exo.svg",
             "btnlink": "https://pt.wikipedia.org/wiki/Cassie_(cantora)",

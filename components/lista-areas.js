@@ -9,7 +9,7 @@ export default class Areas extends React.Component {
   }
 
   async componentDidMount() {  
-    fetch('http://localhost:3000/api/areas').then(async (response)=>{
+    fetch('/api/areas').then(async (response)=>{
       this.setState({areas: await response.json()})
     })
     
@@ -22,7 +22,7 @@ export default class Areas extends React.Component {
       
           
         {(areas && areas.length > 0) ? 
-              <ul class="list-group col-md-8 offset-md-2" >{areas.map(area => <li className='list-group-item d-flex justify-content-between align-items-center'> alas {area.titulo}</li>)}</ul> : <div><span className="loading"></span><p>nada aqui</p></div>}
+              <ul class="list-group col-md-8 offset-md-2" >{areas.map(area => <li className='list-group-item d-flex justify-content-between align-items-center'>{area.titulo}</li>)}</ul> : <div><span className="loading"></span><p>nada aqui</p></div>}
         
         <style jsx>{`
           @keyframes Loading { 

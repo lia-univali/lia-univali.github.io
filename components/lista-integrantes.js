@@ -10,7 +10,7 @@ export default class Team extends React.Component {
   }
 
   async componentDidMount() {  
-    fetch('http://localhost:3000/api/team').then(async (response)=>{
+    fetch('/api/team').then(async (response)=>{
       this.setState({integrantes: await response.json()})
     })
     
@@ -21,7 +21,16 @@ export default class Team extends React.Component {
     return(
       <div>  
         {(integrantes && integrantes.length > 0) ? 
-              <div className='row'>{integrantes.map(pessoa => <Integrante pessoa={pessoa}/>)}</div> : <div><span className="loading"></span><p>nada aqui</p></div>}
+              <div className='row'>
+                {integrantes.map(pessoa => <Integrante pessoa={pessoa}/>)}
+              </div> : <div className="loading-frame">
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+            </div>}
         
         <style jsx>{`
           @keyframes Loading { 
@@ -29,14 +38,19 @@ export default class Team extends React.Component {
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
           }
-          .date .loading {
-            max-width: 100%;
-            height: 24px;
+          .loading-frame{
+            margin-top:100px;
+          }
+          .loading {
+            width: 14%;
+            margin-right: 2%;
+            height: 100px;
+            min-height: 100px;
             border-radius: 4px;
             display: inline-block;
             background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
             background-size: 200% 200%;
-            animation: Loading 2s ease infinite;
+            animation: Loading .4s ease infinite;
           }
         `}</style>
       </div>

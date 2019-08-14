@@ -10,7 +10,7 @@ export default class ProjectLists extends React.Component {
   }
 
   async componentDidMount() {  
-    fetch('http://localhost:3000/api/projects').then(async (response)=>{
+    fetch('/api/projects').then(async (response)=>{
       this.setState({projetos: await response.json()})
     })
     
@@ -24,7 +24,14 @@ export default class ProjectLists extends React.Component {
         <div id='lista-projetos'>
           
         {(projetos && projetos.length > 0) ? 
-              <div className='row'>{projetos.map(projeto => <Projeto project={projeto}/>)}</div> : <div><span className="loading"></span><p>nada aqui</p></div>}
+            <div className='row'>
+              {projetos.map(projeto => <Projeto project={projeto}/>)}
+            </div> : <div className="loading-frame">
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+              <span className="loading"></span>
+            </div>}
         
         </div>
         <style jsx>{`
@@ -33,14 +40,19 @@ export default class ProjectLists extends React.Component {
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
           }
-          .date .loading {
-            max-width: 100%;
-            height: 24px;
-            border-radius: 4px;
+          .loading-frame{
+            margin-top:100px;
+          }
+          .loading {
+            width: 20%;
+            margin-right: 2%;
+            height: 350px;
+            min-height: 350px;
+            border-radius: 20px;
             display: inline-block;
             background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
             background-size: 200% 200%;
-            animation: Loading 2s ease infinite;
+            animation: Loading .4s ease infinite;
           }
         `}</style>
       </div>
