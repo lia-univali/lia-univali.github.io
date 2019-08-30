@@ -106,7 +106,6 @@ section{
           border-right: 2px solid $branco;
         }
       }
-      
     }
   }
   &#projetos{
@@ -153,7 +152,6 @@ section{
         &:hover{
           transform: scale(1.03);
           background-color: #111111fe;
-          // box-shadow: 0px 2px 8px 2px #02CAFDee;
           img{
             border: 5px solid $teal;
           }
