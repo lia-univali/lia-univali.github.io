@@ -23,7 +23,6 @@ nav{
       color: $preto !important;
       transition: all .01s ease-in-out; 
       &:hover{
-        transform: scale(1.05);
         color: $teal !important;
       }
     }
@@ -139,8 +138,6 @@ section{
     background-color: $preto;
     background-image: url('img/escolas_peb.svg');
     background-size: cover;
-    h2{
-    }
     .row{
       padding-top: 50px;
       .pessoa{
@@ -185,8 +182,7 @@ section{
     background-color: #ffffff;
     background-image: url("img/back.svg");
     background-size: cover;
-    h2{
-    }
+    background-attachment: fixed;
     #lista-artigos{
       li{
         transition: all .2s ease-in-out;

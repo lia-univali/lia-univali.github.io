@@ -22,7 +22,7 @@ export default class Team extends React.Component {
       <div>  
         {(integrantes && integrantes.length > 0) ? 
               <div className='row'>
-                {integrantes.map(pessoa => <Integrante pessoa={pessoa}/>)}
+                {integrantes.map((pessoa, key) => <Integrante key={key} pessoa={pessoa}/>)}
               </div> : <div className="loading-frame">
               <span className="loading"></span>
               <span className="loading"></span>

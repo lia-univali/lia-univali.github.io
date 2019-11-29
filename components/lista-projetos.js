@@ -25,9 +25,8 @@ export default class ProjectLists extends React.Component {
           
         {(projetos && projetos.length > 0) ? 
             <div className='row'>
-              {projetos.map(projeto => <Projeto project={projeto}/>)}
+              {projetos.map((projeto, key) => <Projeto key={key} project={projeto}/>)}
             </div> : <div className="loading-frame">
-              <span className="loading"></span>
               <span className="loading"></span>
               <span className="loading"></span>
               <span className="loading"></span>
@@ -44,7 +43,7 @@ export default class ProjectLists extends React.Component {
             margin-top:100px;
           }
           .loading {
-            width: 20%;
+            width: 30%;
             margin-right: 2%;
             height: 350px;
             min-height: 350px;

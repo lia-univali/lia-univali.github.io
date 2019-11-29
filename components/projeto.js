@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 const Projeto = ({project}) => (
-    <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+    <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
       <div className="projeto">
         <img src={project.logo} className="img-fluid"/>
         <h3>{project.projeto}</h3>
@@ -23,6 +23,9 @@ const Projeto = ({project}) => (
       .btn:hover{
         background-color: ${project.cor};
         color: #fff;
+      }
+      .projeto{
+        padding: 20rem;
       }
     `}</style>
   </div>

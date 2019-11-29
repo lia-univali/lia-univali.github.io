@@ -23,16 +23,16 @@ export default class Areas extends React.Component {
           
         {(areas && areas.length > 0) ? 
               <ul class="list-group col-md-8 offset-md-2" id="lista-artigos">
-              {areas.map(area => 
-                <li className='list-group-item d-flex justify-content-between align-items-center'>
+              {areas.map((area, key) => 
+                <li key={key} className='list-group-item d-flex justify-content-between align-items-center'>
                   {area.titulo}
                   <a href={area.link} target="_blank">🔗</a>
                 </li>
                 )}
               </ul> :<div className="loading-frame">
-              <span className="loading"></span>
-              <span className="loading"></span>
-              <span className="loading"></span>
+                      <span className="loading"></span>
+                      <span className="loading"></span>
+                      <span className="loading"></span>
             </div>}
         
         <style jsx>{`
