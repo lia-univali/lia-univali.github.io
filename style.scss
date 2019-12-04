@@ -77,7 +77,7 @@ nav {
   padding: 2rem 0;
   margin: .5rem;
   @media (min-width: 800px) {
-    margin: 2rem;
+    margin: 2rem 4rem;
   }
   
 }
@@ -88,7 +88,7 @@ section {
     padding: 2rem;
   }
   h2 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
   }
   span {
@@ -97,7 +97,6 @@ section {
   &#sobre {
     .container {
       padding: 2rem;
-      padding-bottom: 6rem;
       color: $cinza;
       .text-right {
         h2 {
@@ -112,13 +111,16 @@ section {
         color: $cinza;
         font-size: 1.2rem;
       }
-      border-bottom: 1px solid #cecece;
     }
   }
   &#projetos {
-    background-image: url("img/escolas_color.svg");
-    background-size: cover;
-    background-position-x: right;
+    h2{
+      color: $branco;
+    }
+    span{
+      color: $branco;
+    }
+    background-color: transparent;
     #projects-container {
       @media (min-width: 800px) {
         padding: 2rem;
@@ -131,18 +133,28 @@ section {
     .card {
       border-radius: $border-radius;
       padding: 1rem;
-      background: fade-out($branco, 0.5);
-      backdrop-filter: blur(3px);
+      background: fade-out($branco, 0.9);
+      backdrop-filter: blur(25px);
       transition: all 0.1s ease-in-out;
+      color: $branco;
       &:hover {
-        background: $branco;
+        backdrop-filter: blur(100px);
         transform: scale(1.005);
       }
-
+      @media (min-width: 1000px) {
+        .img-fluid{
+          margin-top: 45%;
+        }
+      }
+      
+      .card-title{
+        letter-spacing: .1rem;
+      }
       .card-img-top {
-        max-height: 200px;
+        max-height: 150px;
       }
       .card-footer {
+        border-top: 1px solid rgba(255,255,255,.52);
         text-align: center;
         background: transparent;
         .btn {
@@ -154,9 +166,7 @@ section {
   &#integrantes {
     h2{
     }
-    color: $branco;
-    background-color: $preto;
-    background-image: url("img/escolas_peb.svg");
+    background-image: url("img/escolas_color.svg");
     background-size: cover;
     background-position-x: left;
     .row {
@@ -168,11 +178,10 @@ section {
         padding: 10px;
         margin: 10px;
         transition: all 0.2s ease-in-out;
-        background-color: #11111155;
+        
         border-radius: 20px;
         &:hover {
           transform: scale(1.03);
-          background-color: #111111fe;
           img {
             border: 5px solid $teal;
           }
