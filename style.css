@@ -1,0 +1,291 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./img/pessoal.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/pessoal.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 8% 10%;
+  padding-top: 120px;
+}
+
+@media (min-width: 800px) {
+  .jumbotron {
+    padding-top: 15%;
+  }
+}
+
+.jumbotron img {
+  max-width: 80%;
+}
+
+@media (min-width: 800px) {
+  .jumbotron img {
+    max-width: 300px;
+  }
+}
+
+.jumbotron .hero-subtitle {
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav.bg-dark {
+  background-color: #111 !important;
+}
+
+nav.bg-transparent {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 2rem;
+}
+
+nav .nav-link {
+  color: #fff !important;
+}
+
+nav .nav-link:hover {
+  color: #26a69a !important;
+}
+
+.main {
+  z-index: 1;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 0;
+  margin: .5rem;
+}
+
+@media (min-width: 800px) {
+  .main {
+    margin: 2rem;
+  }
+}
+
+section {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+section h2 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+section span {
+  font-size: 1.2rem;
+}
+
+section#sobre .container {
+  padding: 2rem;
+  padding-bottom: 6rem;
+  color: #444;
+  border-bottom: 1px solid #cecece;
+}
+
+section#sobre .container .text-right h2 {
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  section#sobre .container .text-right {
+    border-right: 2px solid #111;
+  }
+}
+
+section#sobre .container p {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+section#projetos {
+  background-image: url("img/escolas_color.svg");
+  background-size: cover;
+  background-position-x: right;
+}
+
+@media (min-width: 800px) {
+  section#projetos #projects-container {
+    padding: 2rem;
+  }
+}
+
+section#projetos .card-deck {
+  margin-top: 2rem;
+}
+
+section#projetos .card {
+  border-radius: 20px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+section#projetos .card:hover {
+  background: #fff;
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
+}
+
+section#projetos .card .card-img-top {
+  max-height: 200px;
+}
+
+section#projetos .card .card-footer {
+  text-align: center;
+  background: transparent;
+}
+
+section#projetos .card .card-footer .btn {
+  font-size: 1.1rem;
+}
+
+section#integrantes {
+  color: #fff;
+  background-color: #111;
+  background-image: url("img/escolas_peb.svg");
+  background-size: cover;
+  background-position-x: left;
+}
+
+section#integrantes .row {
+  padding-top: 50px;
+}
+
+section#integrantes .row .pessoa {
+  padding: 10px;
+  margin: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #11111155;
+  border-radius: 20px;
+}
+
+section#integrantes .row .pessoa h4 {
+  text-align: center;
+}
+
+section#integrantes .row .pessoa:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #111111fe;
+}
+
+section#integrantes .row .pessoa:hover img {
+  border: 5px solid #26a69a;
+}
+
+section#integrantes .row .pessoa img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+section#integrantes .row .pessoa .links a {
+  color: #26a69a !important;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+section#integrantes .row .pessoa .links a:hover {
+  color: #1d7d74 !important;
+}
+
+section#integrantes .row .pessoa .links a[type="button"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+section#artigos {
+  background-color: #ffffff;
+  background-image: url("img/back.svg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section#artigos #lista-artigos li {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+section#artigos #lista-artigos li:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 2;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  background: #fafafa;
+}
+
+section#artigos #lista-artigos li:hover a {
+  padding-right: 12px;
+}
+
+section#artigos #lista-artigos a {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #0a202b !important;
+}
+
+section#artigos #lista-artigos a:hover {
+  color: #26a69a !important;
+}
+
+footer {
+  padding: 0 2rem;
+}
+
+footer p {
+  text-align: right;
+  color: #fff;
+}
+
+footer p a {
+  color: #fff !important;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

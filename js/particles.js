@@ -1,7 +1,7 @@
 let data = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 120,
         "density": {
           "enable": true,
           "value_area": 800
@@ -26,7 +26,7 @@ let data = {
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.6,
         "random": false,
         "anim": {
           "enable": false,
@@ -36,7 +36,7 @@ let data = {
         }
       },
       "size": {
-        "value": 3,
+        "value": 4,
         "random": true,
         "anim": {
           "enable": false,
