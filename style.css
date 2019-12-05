@@ -5,8 +5,8 @@ html, body {
 
 body {
   background-color: #111;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./img/pessoal.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/pessoal.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/pessoal.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/pessoal.jpg");
   background-size: 100%;
   background-attachment: fixed;
 }
@@ -167,8 +167,6 @@ section#projetos .card {
 section#projetos .card:hover {
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
-  -webkit-transform: scale(1.005);
-          transform: scale(1.005);
 }
 
 @media (min-width: 1000px) {

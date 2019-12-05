@@ -5,6 +5,7 @@ $azul: rgb(10, 32, 43);
 $teal: #26a69a;
 
 $border-radius: 20px;
+$transp: 0.7;
 html, body{
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ html {
 }
 body{
   background-color: $preto;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/pessoal.jpg');
+  background: linear-gradient( rgba(0, 0, 0, $transp), rgba(0, 0, 0, $transp) ), url('./img/pessoal.jpg');
   background-size: 100%;
   background-attachment: fixed;
 }
@@ -139,7 +140,6 @@ section {
       color: $branco;
       &:hover {
         backdrop-filter: blur(100px);
-        transform: scale(1.005);
       }
       @media (min-width: 1000px) {
         .img-fluid{
