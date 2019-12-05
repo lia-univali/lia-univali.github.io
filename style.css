@@ -116,12 +116,13 @@ section#sobre .container {
   color: #444;
 }
 
-section#sobre .container .text-right h2 {
+section#sobre .container .about-title h2 {
   font-size: 3rem;
 }
 
 @media (min-width: 800px) {
-  section#sobre .container .text-right {
+  section#sobre .container .about-title {
+    text-align: right;
     border-right: 2px solid #111;
   }
 }
@@ -129,6 +130,7 @@ section#sobre .container .text-right h2 {
 section#sobre .container p {
   color: #444;
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 section#projetos {
@@ -159,8 +161,8 @@ section#projetos .card {
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #fff;
 }
 
@@ -175,22 +177,28 @@ section#projetos .card:hover {
   }
 }
 
-section#projetos .card .card-title {
-  letter-spacing: .1rem;
-}
-
 section#projetos .card .card-img-top {
   max-height: 150px;
 }
 
+section#projetos .card .card-body .card-title {
+  letter-spacing: .1rem;
+}
+
+section#projetos .card .card-body .card-text {
+  text-align: justify;
+}
+
 section#projetos .card .card-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
   background: transparent;
+  margin: 0;
 }
 
 section#projetos .card .card-footer .btn {
   font-size: 1.1rem;
+  width: 100%;
 }
 
 section#integrantes {
@@ -226,7 +234,7 @@ section#integrantes .row .pessoa:hover img {
 
 section#integrantes .row .pessoa img {
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #111;
   margin-bottom: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -248,13 +256,6 @@ section#integrantes .row .pessoa .links a[type="button"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-section#artigos {
-  background-color: #ffffff;
-  background-image: url("img/back.svg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 section#artigos #lista-artigos li {
