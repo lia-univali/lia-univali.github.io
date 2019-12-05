@@ -3,6 +3,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #111;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/pessoal.jpg");
@@ -28,13 +32,13 @@ body {
   text-align: center;
   margin-bottom: 0;
   border-radius: 0;
-  padding: 8% 10%;
-  padding-top: 120px;
+  height: 90vh;
+  padding-top: 30vh;
 }
 
 @media (min-width: 800px) {
   .jumbotron {
-    padding-top: 15%;
+    padding-top: 35vh;
   }
 }
 
