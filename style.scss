@@ -16,7 +16,7 @@ html {
 body{
   background-color: $preto;
   background: linear-gradient( rgba(0, 0, 0, $transp), rgba(0, 0, 0, $transp) ), url('./img/pessoal.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
