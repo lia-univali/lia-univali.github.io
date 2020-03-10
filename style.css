@@ -149,6 +149,21 @@ section#projetos span {
   color: #fff;
 }
 
+section#projetos .btn-mais-projetos {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+section#projetos .btn-mais-projetos:hover {
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
 @media (min-width: 800px) {
   section#projetos #projects-container {
     padding: 2rem;
@@ -303,5 +318,13 @@ footer p {
 footer p a {
   color: #fff !important;
   font-weight: 700;
+}
+
+.btn-purple {
+  color: #ac1b5f;
+}
+
+.btn-purple:hover {
+  color: #ac1b5f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -122,6 +122,17 @@ section {
     span{
       color: $branco;
     }
+    .btn-mais-projetos{
+      width: 100%;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      background: fade-out($branco, 0.9);
+      backdrop-filter: blur(25px);
+      border-radius: $border-radius;
+      &:hover {
+        backdrop-filter: blur(100px);
+      }
+    }
     background-color: transparent;
     #projects-container {
       @media (min-width: 800px) {
@@ -254,5 +265,11 @@ footer {
       color: $branco !important;
       font-weight: 700;
     }
+  }
+}
+.btn-purple{
+  color: #ac1b5f;
+  &:hover{
+    color: #ac1b5f;
   }
 }
