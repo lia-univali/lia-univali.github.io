@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="pagina.css">
+  <title>Análise Espacial dos Casos de CoViD-19</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140824797-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140824797-3');
+  </script>
+
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="application-name" content="Laboratório de Inteligência Aplicada">
+  <meta name="description" content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento.">
+  <meta name="author" content="Alisson Steffens">
+  <meta name="keywords" content="computação, evento, científico, computer, beach, balneário camboriú, univali, lia">
+
+  <!-- Metadados para facebook -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Análise Espacial dos Casos de CoViD-19" />
+  <meta property="og:description" content="Análise da estrutura dos serviços de saúde em Santa Catarina" />
+  <meta property="og:url" content="https://lia-univali.github.io/" />
+  <meta property="og:site_name" content="Laboratório de Inteligência Aplicada" />
+  <meta property="og:image" content="https://lia-univali.github.io/thumb.jpg" />
+
+  <!-- Metadados para twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Análise da estrutura dos serviços de saúde em Santa Catarina" />
+  <meta name="twitter:title" content="Análise Espacial dos Casos de CoViD-19" />
+  <meta name="twitter:image" content="https://lia-univali.github.io/thumb.jpg" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top ">
+    <div class="container"><a class="navbar-brand hvr-grow" href="https://lia-univali.github.io/">
+        <img src="../../../img/lialines.svg" height="32px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-right" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          </li>
+        </ul>
+      </div>
+      <a href="https://www.univali.br/Paginas/default.aspx" target="_blank">
+        <img class="hvr-shrink" src="../../../img/univaliw.svg" height="50px" />
+      </a>
+    </div>
+  </nav>
+
+  <div class="">
+    <!-- <div id="particles-js" class=""><canvas width="937" height="10" class="particles-js-canvas-el partic"></canvas> -->
+
+    </div>
+    <section id="" class="jumbotron">
+      <div class="">
+        <h1 class="hero-subtitle">Análise Espacial dos Casos de CoViD-19</h1>
+      </div>
+    </section>
+  </div>
+  <div class="main">
+    <section id="">
+      <div class="container">
+        <h2>Distribuição do número casos e de mortalidade por COVID-19 detectados no Brasil por município, 2020</h2>
+        <iframe id="brasil" scrolling="no" style="border:none;" seamless="seamless" src="charts/brasil.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Infecção do COVID-19 em de Santa Catarina</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/contagio_por_habitantes.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Mortalidade do COVID-19 em de Santa Catarina</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/mortalidade_por_habitantes.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Grau de contaminação do COVID-19 nos municípios de Santa Catarina</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/infectados_por_cidade_por_dia_de_infec_por_pop.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Relação entre mortalidade e taxa de cobertura das ESFs</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/mortalidade_esf.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Relação entre taxa de infecção e taxa de cobertura das ESFs</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/casos_esf.html" height="525" width="100%"></iframe>
+        <hr>
+        <h2>Relação entre mortalidade e número de respiradores por cidade</h2>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="charts/respiradores.html" height="525" width="100%"></iframe>
+
+
+      </div>
+    </section>
+  </div>
+  
+  <!-- <div class="main">
+    <section id="artigos">
+      <div class="container">
+        <h2 class="">Linhas de Pesquisa</h2>
+        <div class="">
+          <div class="loading-frame"><span class="loading"></span><span
+              class="loading"></span><span class="loading"></span></div>
+        </div>
+      </div>
+    </section>
+  </div> -->
+  <footer class="" id="contato">
+    <p><b class="code">code</b> with <b class="heart">❤</b> by <a href="https://alissonsteffens.com/">Alisson</a></p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="../../../js/particles.js"></script>
+  <script src="../../../js/scroll.js"></script>
+  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+
+</html>
