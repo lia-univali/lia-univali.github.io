@@ -13,11 +13,14 @@ $transp: 0.7;
     text-align: center;
     margin-bottom: 0;
     border-radius: 0;
-    height:20vh;
-    // padding: 14% 10%;
-    padding-top: 12vh;
+    height:40vh;
     @media (min-width: 800px) {
-      padding-top: 12vh;
+      height:25vh;
+    }
+    // padding: 14% 10%;
+    padding-top: 20vh;
+    @media (min-width: 800px) {
+      padding-top: 15vh;
     }
     img {
       max-width: 80%;
@@ -32,7 +35,11 @@ $transp: 0.7;
     }
 }
 h2{
-  margin-top: 100px !important;
+  margin-top: -10px !important;
+  @media (min-width: 800px) {
+    margin-top: 30px !important;
+  }
+  
   font-size: 1.5rem !important;
 }
 .container {
