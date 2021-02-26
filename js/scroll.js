@@ -8,6 +8,7 @@ $(document).ready(function() {
                 behavior: 'smooth',
                 block: 'start'
             });
+            
         });
     });
     $(window).on('scroll', onScroll)
@@ -21,12 +22,4 @@ function onScroll() {
         $('nav').addClass('bg-transparent')
         $('nav').removeClass('bg-dark')
     }
-    // if (navOffsetTop < $(window).scrollTop() && !$('nav').hasClass('is-fixed-top')) {
-    //     $('nav').addClass('is-fixed-top')
-    //     $('body').css("padding-top", $('nav').height())
-    // }
-    // if (navOffsetTop > $(window).scrollTop() && $('nav').hasClass('is-fixed-top')) {
-    //     $('nav').removeClass('is-fixed-top')
-    //     $('body').css("padding-top", 0)
-    // }
 }

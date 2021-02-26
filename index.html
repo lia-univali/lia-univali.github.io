@@ -13,6 +13,8 @@
   <link rel="stylesheet"
     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>lia</title>
 
@@ -20,7 +22,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140824797-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-140824797-3');
@@ -29,7 +31,8 @@
 
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <meta name="application-name" content="Laboratório de Inteligência Aplicada">
-  <meta name="description" content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento.">
+  <meta name="description"
+    content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento.">
   <meta name="author" content="Alisson Steffens">
   <meta name="keywords" content="computação, evento, científico, computer, beach, balneário camboriú, univali, lia">
 
@@ -37,14 +40,16 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Laboratório de Inteligência Aplicada" />
-  <meta property="og:description" content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento." />
+  <meta property="og:description"
+    content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento." />
   <meta property="og:url" content="https://lia-univali.github.io/" />
   <meta property="og:site_name" content="Laboratório de Inteligência Aplicada" />
   <meta property="og:image" content="https://lia-univali.github.io/thumb.jpg" />
 
   <!-- Metadados para twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento." />
+  <meta name="twitter:description"
+    content="O LIA realiza atividades de pesquisa, aplicando artefatos computacionais em diversas áreas do conhecimento." />
   <meta name="twitter:title" content="Laboratório de Inteligência Aplicada" />
   <meta name="twitter:image" content="https://lia-univali.github.io/thumb.jpg" />
 </head>
@@ -63,11 +68,14 @@
           <li class="nav-item"><a class="nav-link goto" href="#sobre" data-to="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link goto" href="#projetos" data-to="#projetos">Projetos</a></li>
           <!-- <li class="nav-item"><a class="nav-link goto" href="#integrantes" data-to="#integrantes">Integrantes</a></li> -->
-          
+
         </ul>
       </div>
-      <a href="https://www.univali.br/Paginas/default.aspx" target="_blank">
+      <a href="https://www.univali.br/Paginas/default.aspx" class="" target="_blank">
         <img class="hvr-shrink" src="./img/univaliw.svg" height="50px" />
+      </a>
+      <a href="https://www.instagram.com/liaunivali/" class="social" target="_blank">
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
   </nav>
@@ -85,103 +93,113 @@
   </div>
   <div class="main">
     <section id="sobre">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 about-title">
-            <h2>História</h2>
-          </div>
-          <div class="col-md-8">
-            <p>Fundado no ano de 2000, o LIA realiza atividades de pesquisa, aplicando artefatos computacionais em
-              diversas áreas do conhecimento. Aqui os acadêmicos podem contar com orientação de professores e com
-              monitores de disciplinas (Algoritmos, Estruturas de dados e Programação).</p>
+      <div class="card-sobre">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 about-title">
+              <h2>História</h2>
+            </div>
+            <div class="col-md-8">
+              <p>Fundado no ano de 2000, o LIA realiza atividades de pesquisa, aplicando artefatos computacionais em
+                diversas áreas do conhecimento. Aqui os acadêmicos podem contar com orientação de professores e com
+                monitores de disciplinas (Algoritmos, Estruturas de dados e Programação).</p>
+            </div>
           </div>
         </div>
-
       </div>
+      
     </section>
   </div>
-  
-    <section id="projetos">
-      <div class="container">
-        <h2 class="">Projetos</h2><span class="">Projetos do Laboratório em Destaque.</span>
-        <div id="projects-container">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/ecassie.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">CASSIE</h5>
-                <p class="card-text"> Análise e mapeamento das regiões costeiras.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/lia-univali/cassie" target="_blank"><button type="button" class="btn btn-primary">Saiba Mais</button></a>
-              </div>
-            </div>
 
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/urchin.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Ouriço-do-mar</h5>
-                <p class="card-text">Sistema de detecção e reconhecimento de ouriços-do-mar.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/lia-univali/see-urchin" target="_blank"><button type="button" class="btn btn-warning">Saiba Mais</button></a>
-              </div>
+  <section id="projetos">
+    <div class="container">
+      <h2 class="">Projetos</h2><span class="">Projetos do Laboratório em Destaque.</span>
+      <div id="projects-container">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/ecassie.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">CASSIE</h5>
+              <p class="card-text"> Análise e mapeamento das regiões costeiras.</p>
             </div>
-
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/snake.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">IA em Jogos</h5>
-                <p class="card-text">Integração de técnicas de IA com jogos.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/lia-univali/neat-snake" target="_blank"><button type="button" class="btn btn-success">Saiba Mais</button></a>
-              </div>
+            <div class="card-footer">
+              <a href="https://github.com/lia-univali/cassie" target="_blank"><button type="button"
+                  class="btn btn-primary">Saiba Mais</button></a>
             </div>
           </div>
-          <div class="card-deck">
-            
 
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/3d.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Pearmibilidade de Materiais</h5>
-                <p class="card-text">Estimativa de Permeabilidade de Materiais por Meio de Difusão de Fluidos em Redes Complexas.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/lia-univali/permeabilidade-de-materiais" target="_blank"><button type="button" class="btn btn-danger">Saiba Mais</button></a>
-              </div>
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/urchin.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ouriço-do-mar</h5>
+              <p class="card-text">Sistema de detecção e reconhecimento de ouriços-do-mar.</p>
             </div>
-
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/projetob.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Processamento de Imagens</h5>
-                <p class="card-text">Processamento de imagens para detecção de padrões, emoções e faces</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/AlissonSteffens/image-processing-api" target="_blank"><button type="button" class="btn btn-info">Saiba Mais</button></a>
-              </div>
+            <div class="card-footer">
+              <a href="https://github.com/lia-univali/see-urchin" target="_blank"><button type="button"
+                  class="btn btn-warning">Saiba Mais</button></a>
             </div>
-
-            <div class="card">
-              <img class="card-img-top" src="img/projetos/cotb.svg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Computer on the Beach</h5>
-                <p class="card-text">Evento de divulgação científica</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://computeronthebeach.com.br/" target="_blank"><button type="button" class="btn btn-purple">Saiba Mais</button></a>
-              </div>
-            </div>
-
           </div>
 
-          <a href="https://github.com/lia-univali" target="_blank"><button class="btn btn-large btn-primary btn-mais-projetos">Mais Projetos</button></a>
-          
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/snake.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">IA em Jogos</h5>
+              <p class="card-text">Integração de técnicas de IA com jogos.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/lia-univali/neat-snake" target="_blank"><button type="button"
+                  class="btn btn-success">Saiba Mais</button></a>
+            </div>
+          </div>
         </div>
+        <div class="card-deck">
+
+
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/3d.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pearmibilidade de Materiais</h5>
+              <p class="card-text">Estimativa de Permeabilidade de Materiais por Meio de Difusão de Fluidos em Redes
+                Complexas.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/lia-univali/permeabilidade-de-materiais" target="_blank"><button type="button"
+                  class="btn btn-danger">Saiba Mais</button></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/projetob.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Processamento de Imagens</h5>
+              <p class="card-text">Processamento de imagens para detecção de padrões, emoções e faces</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/AlissonSteffens/image-processing-api" target="_blank"><button type="button"
+                  class="btn btn-info">Saiba Mais</button></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/projetos/cotb.svg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Computer on the Beach</h5>
+              <p class="card-text">Evento de divulgação científica</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://computeronthebeach.com.br/" target="_blank"><button type="button"
+                  class="btn btn-purple">Saiba Mais</button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="https://github.com/lia-univali" target="_blank"><button
+            class="btn btn-large btn-primary btn-mais-projetos">Mais Projetos</button></a>
+
       </div>
-    </section>
+    </div>
+  </section>
   <!-- <div class="main">
     <section id="integrantes">
       <div class="container">

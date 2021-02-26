@@ -15,6 +15,18 @@ body {
   background-attachment: fixed;
 }
 
+.social {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.social:hover {
+  color: #fff;
+}
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -32,13 +44,19 @@ body {
   text-align: center;
   margin-bottom: 0;
   border-radius: 0;
-  height: 90vh;
+  height: 85vh;
   padding-top: 30vh;
 }
 
 @media (min-width: 800px) {
   .jumbotron {
     padding-top: 35vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  .jumbotron {
+    padding-top: 40vh;
   }
 }
 
@@ -81,22 +99,7 @@ nav .nav-link:hover {
   color: #26a69a !important;
 }
 
-.main {
-  z-index: 1;
-  background: #fff;
-  border-radius: 20px;
-  padding: 2rem 0;
-  margin: .5rem;
-}
-
-@media (min-width: 800px) {
-  .main {
-    margin: 2rem 4rem;
-  }
-}
-
 section {
-  background-color: #fff;
   padding: 1rem;
 }
 
@@ -115,29 +118,47 @@ section span {
   font-size: 1.2rem;
 }
 
-section#sobre .container {
+section#sobre {
+  padding-top: 5vh;
+}
+
+section#sobre .card-sobre {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 0;
+  margin: .5rem;
+}
+
+@media (min-width: 800px) {
+  section#sobre .card-sobre {
+    margin: 2rem 4rem;
+  }
+}
+
+section#sobre .card-sobre .container {
   padding: 2rem;
   color: #444;
 }
 
-section#sobre .container .about-title h2 {
+section#sobre .card-sobre .container .about-title h2 {
   font-size: 3rem;
 }
 
 @media (min-width: 800px) {
-  section#sobre .container .about-title {
+  section#sobre .card-sobre .container .about-title {
     text-align: right;
     border-right: 2px solid #111;
   }
 }
 
-section#sobre .container p {
+section#sobre .card-sobre .container p {
   color: #444;
   font-size: 1.2rem;
   text-align: justify;
 }
 
 section#projetos {
+  padding-top: 5vh;
   background-color: transparent;
 }
 
@@ -153,15 +174,12 @@ section#projetos .btn-mais-projetos {
   width: 100%;
   margin-top: 2rem;
   font-size: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
+  background: #111;
   border-radius: 20px;
 }
 
 section#projetos .btn-mais-projetos:hover {
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  background: rgba(17, 17, 17, 0.8);
 }
 
 @media (min-width: 800px) {
@@ -177,17 +195,14 @@ section#projetos .card-deck {
 section#projetos .card {
   border-radius: 20px;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
+  background: #111;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fff;
 }
 
 section#projetos .card:hover {
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  background: rgba(17, 17, 17, 0.8);
 }
 
 @media (min-width: 1000px) {
